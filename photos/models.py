@@ -31,4 +31,3 @@ class Photo(models.Model):
     @classmethod
     def search_by_title(cls,search_term):
         photos = cls.objects.filter(title__icontains=search_term)
-        return 
