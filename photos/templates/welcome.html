@@ -1,3 +1,5 @@
 {%extends 'base.html' %} {%block content %}
 <h3>WELCOME TO MY GALLARY</h3>
-{%endblock%}
+
+{%for image in images %} <img src="{{image.Photo_image.url}}" height="350" width="450">
+<p>{{image.Photo_image.url}}</p> {%endfor%} {%endblock%}

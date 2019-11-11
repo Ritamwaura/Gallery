@@ -4,7 +4,9 @@ from .models import Photo
 
 # Create your views here.
 def welcome(request):
-    return render(request,'welcome.html')
+    images=Photo.objects.all()
+    
+    return render(request,'welcome.html',{'images':images})
 
 def search_results(request):
     
