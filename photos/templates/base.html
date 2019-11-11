@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    {% include "navbar.html" %}
+    {% include "navbar.html" %} {%block content%} {%endblock%} {%block script %}
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -28,6 +28,10 @@
 
     <!-- Material Design for Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/js/mdb.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    {%endblock%}
 </body>
 
 </html>
