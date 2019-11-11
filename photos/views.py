@@ -13,7 +13,7 @@ def search_results(request):
     if 'photo' in request.GET and request.GET["photo"]:
         search_term = request.GET.get("photo")
         searched_articles = photo.search_by_title(search_term)
-        message = f"{search_term}"
+        message = "{}".format(search_term)
 
         return render(request, 'all-photos/search.html',{"message":message,"photo": searched_articles})
 
