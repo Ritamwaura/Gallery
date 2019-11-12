@@ -1,12 +1,12 @@
-gallery
+## gallery
 A personal gallery application that you display your photos for others to see.
 
-Description
+## Description
 The application allows users to view images according to their categories and location. 
 
-##screenshots
+## screenshots
 
-BDD Specifications Table
+## BDD Specifications Table
 User Requirements	Input	Output
 View all images	Go to the home page	All images will be displayed
 Search for an image	Input the category name in the search bar	All images in that category will display
@@ -20,13 +20,13 @@ Install all the necessary dependencies necessarry for running the application us
 Create a database: psql then create the databse using this command: CREATE DATABASE gallery
 Run migrations using these respective commmands: python3.6 manage.py makemigrations images then: python3.6 manage.py migrate
 Run the app using this command: python3.6 manage.py runserver on the terminal.You can then open the app on your browser
-Technologies Used
+## Technologies Used
 Python 3.6
 Django
 Bootstrap
 HTML
-Support and Contact Details
+## Support and Contact Details
 Email : mwaurarita@gmail.com
 
-Licence
+## Licence
 Copyrightmwaurarita@gmail.com
