@@ -23,7 +23,7 @@ The application allows users to view images according to their categories and lo
 ## Technologies Used
 Python 3.7
 Django
-Bootstrap
+Bootstrap m
 HTML
 ## Support and Contact Details
 Email : mwaurarita@gmail.com
