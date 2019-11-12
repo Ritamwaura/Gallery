@@ -10,9 +10,11 @@ def welcome(request):
 
 def search_results(request):
     
-    if 'photo' in request.GET and request.GET["photo"]:
-        search_term = request.GET.get("photo")
-        searched_articles = photo.search_by_title(search_term)
+    if 'image' in request.GET and request.GET["image"]:
+        
+        search_term = request.GET.get("image")
+        
+        searched_articles = Photo.search_by_title(search_term)
         message = "{}".format(search_term)
 
         return render(request, 'all-photos/search.html',{"message":message,"photo": searched_articles})
@@ -20,9 +22,10 @@ def search_results(request):
     else:
         message = "You haven't searched for any term"
         return render(request, 'all-photos/search.html',{"message":message})
-def photo(request,article_id):
-    try:
-       photo =Photo.objects.get(id =photo_id)
-    except DoesNotExist:
-        raise Http404()
-    return render(request,"all-news/article.html", {"article":article})       
+    
+#def photo(request,article_id):
+#    try:
+#       photo =Photo.objects.get(id =photo_id)
+#    except DoesNotExist:
+#        raise Http404()
+#    return render(request,"all-news/article.html", {"article":article})       
